@@ -1,0 +1,21 @@
+--- Step 1 ---
+npm init --y
+
+--- Step 2 ---
+npm install typescript ts-node express prisma @prisma/client tsoa mysql2
+npm install --save-dev @types/node @types/express
+
+--- Step 3 ---
+npx tsc --init
+
+--- Step 4 ---
+npx prisma init
+
+--- Step 5 ---
+npx prisma migrate dev --name init
+
+--- Step 6 ---
+npx tsoa routes
+
+--- Step 7 ---
+npx tsoa spec
